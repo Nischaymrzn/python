@@ -207,13 +207,18 @@
 
 # def fact(n):
 #     '''This function gives the factorial of given number'''
-#     while (n>0):
-#         if (n==1):
-#             return 1
-#         else:
-#             return n * fact(n-1)
+#     i=1
+#     fact=1
+#     if (n==1 or n==0):
+#         return 1
+#     while (n>=i):
+#         fact=fact*i
+#         i+=1
+#     return fact
+            
         
-# value=fact(4)
+        
+# value=fact(5)
 # print(F"The factorial of given number is {value}")
 # print(fact.__doc__)
 
@@ -259,3 +264,65 @@
 
 # # Example calls to the function
 # my_function(1, 2, 3, name="Alice", age=30)
+
+
+# def duplicate(n):
+#     '''This function is used to delete duplicate data from a list'''
+#     m=set(n)
+#     new_list=list(m)
+#     print(new_list)
+
+# n=[1,2,3,4,1,2]
+# duplicate(n)
+
+# def reverseString(s):
+#     '''Function to rever a string using palindrome'''
+#     if len(s)==0:
+#         return s
+#     else:
+#         return reverseString(s[1:])+s[0]
+    
+# output=reverseString("nischay")
+# print(output)
+
+# def bonus(salary,time_spent):
+#     '''Fuction to calculate the bonus'''
+#     print(salary,time_spent)
+#     if (time_spent>10):
+#         bonus=(10*salary)/100
+#     elif (time_spent>=6 and time_spent<=10):
+#         bonus=(8*salary)/100
+#     else:
+#         bonus=(5*salary)/100
+        
+#     print(f"The bonus is {bonus}")
+    
+    
+
+
+# salary=int(input("Enter the salary"))
+# time_spent=int(input("Enter the time spent by that employee"))
+# bonus(salary,time_spent)
+
+# def calculate(s):
+#     spaceCount=0
+#     digitCount=0
+#     lettersCount=0
+#     numbersCount=0
+#     for i in s:
+#         if (i.isdigit()):
+#             digitCount += 1
+#         elif (i.isspace()):
+#             spaceCount += 1
+#         elif (i.isalpha()):
+#             lettersCount += 1
+#         else:
+#             numbersCount += 1
+    
+#     print(f"letters:{lettersCount} digit:{digitCount} space:{spaceCount} numbers:{numbersCount}")
+            
+# a="Hello I am Ai123 4.0 version"
+# calculate(a)
+    
+
+    
